@@ -3,18 +3,18 @@
 An interactive Excel dashboard that analyzes what drives bike purchases — examining income, gender, age, commute distance, and other demographics — built end to end, from raw data cleaning through modeling to an interactive, slicer-driven dashboard.
 
 <p align="center">
-  <img src="images/bike_project_dashboard.png" alt="Bike Sales Dashboard" width="100%">
+  <img src="images/bike_sales_dashboard.png" alt="Bike Sales Dashboard" width="100%">
 </p>
 
 ---
 
 ## Project Overview
 
-A retailer wants to understand its potential bike-buying customers. Using a survey-style dataset of roughly 1,000 individuals, this project answers a core business question:
+A retailer wants to understand its potential bike-buying customers. Using a survey-style dataset of 1,000 individuals, this project answers a core business question:
 
 **Which customer characteristics are most associated with buying a bike, and where should marketing focus?**
 
-The final deliverable is an interactive Excel dashboard that lets a user slice the data by marital status, region, and education, and instantly see how income, age, and commute distance relate to purchase behavior.
+Of the 1,000 respondents, **48.1% purchased a bike** — a near-even split that makes the differences between buyers and non-buyers especially meaningful. The final deliverable is an interactive Excel dashboard that lets a user slice the data by marital status, region, and education, and instantly see how income, age, and commute distance relate to purchase behavior.
 
 ---
 
@@ -68,7 +68,7 @@ flowchart LR
 
 Worked on a copy of the raw data, keeping the original untouched on a separate sheet for safety, and prepared it for analysis:
 
-- Removed duplicate records to prevent double-counting.
+- Removed duplicate records (1,026 raw rows reduced to 1,000 unique respondents) to prevent double-counting.
 - Standardized coded values for readability — replaced `M`/`S` with `Married`/`Single` and `M`/`F` with `Male`/`Female` so the dashboard is understandable to a non-technical audience.
 - Formatted income as currency for consistent, clean display.
 - Reworded the commute band `10+ Miles` to `More than 10 Miles` so categories sort in a logical order.
@@ -95,7 +95,7 @@ Built PivotTables to summarize the data for each view:
 
 - Average Income by Gender and Purchase — clustered column chart
 - Bike Purchases by Age Bracket — line chart showing the shape across ordered age groups
-- Bike Purchases by Commute Distance — line chart across distance bands
+- Bike Purchases by Commute Distance — clustered column chart across distance bands
 
 ### 5. Dashboard Assembly
 
@@ -107,26 +107,15 @@ Built PivotTables to summarize the data for each view:
 
 ## Key Insights
 
-- **Buyers earn more.** In both genders, people who purchased a bike had a higher average income than those who did not, suggesting income is a meaningful purchase driver.
-- **Middle-aged customers dominate.** Respondents aged 31 to 54 purchased far more bikes than adolescents (under 31) or older customers (55 and over).
-- **Short commuters buy more.** Purchases are highest among people with the shortest commutes and generally taper off as commute distance grows.
-- **Income skews by gender** in this sample, with males reporting higher average income than females.
+- **Buyers earn more.** In both genders, people who purchased a bike had a higher average income than those who did not. The gap is widest among men, where buyers averaged about $60,100 versus $56,200 for non-buyers — suggesting income is a meaningful purchase driver.
+- **Middle-aged customers dominate.** Respondents aged 31 to 54 accounted for 383 of the 481 purchases (roughly 80%), far outpacing adolescents and older customers.
+- **Purchase rate falls as commute distance grows.** Short commuters buy at the highest rates — around 55–59% for those within 5 miles of work — dropping to 40% at 5–10 miles and just 30% for commutes over 10 miles. (Note this is a rate, not a raw count: the 0–1 mile band has the most buyers simply because most respondents live close to work.)
+- **Income skews by gender** in this sample, with males reporting higher average income than females across both buyer and non-buyer groups.
 
 ---
 
 ## Business Recommendations
 
-- Prioritize the middle-aged, higher-income segment in paid marketing, where purchase intent concentrates.
-- Target short-commute and urban customers, who over-index on buying, with commuter-focused messaging.
+- Prioritize the middle-aged, higher-income segment in paid marketing, where the large majority of purchases concentrate.
+- Target short-commute and urban customers, who convert at meaningfully higher rates, with commuter-focused messaging.
 - Test premium positioning, since buyers consistently earn more than non-buyers, indicating potential room to move up-market.
-
----
-
-## Reflections and Next Steps
-
-This was one of my first end-to-end Excel dashboards, and building it start to finish surfaced a few things I want to carry into future projects:
-
-- **Match the chart type to the data.** I used a line chart for commute distance, but those bands are categorical, not continuous — a clustered column chart would communicate the comparison more honestly. Next time I'll be more deliberate about chart-type selection up front.
-- **Lead with headline numbers.** The dashboard would read more like a real business tool with KPI cards (total respondents, overall purchase rate, average income of buyers) at the top. I plan to include summary metrics by default going forward.
-
-Documenting these here so I can hold myself to them — and so the progression is visible across my next projects.
