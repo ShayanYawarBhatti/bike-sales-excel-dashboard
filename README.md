@@ -128,7 +128,5 @@ This was one of my first end-to-end Excel dashboards, and building it start to f
 
 - **Match the chart type to the data.** I used a line chart for commute distance, but those bands are categorical, not continuous — a clustered column chart would communicate the comparison more honestly. Next time I'll be more deliberate about chart-type selection up front.
 - **Lead with headline numbers.** The dashboard would read more like a real business tool with KPI cards (total respondents, overall purchase rate, average income of buyers) at the top. I plan to include summary metrics by default going forward.
-- **Go deeper on the data.** I focused on income, age, and commute distance, but occupation, home ownership, and number of children likely hold additional signal. In future work I want to explore more variables before settling on a final set of visuals.
-- **Think about layout earlier.** I arranged charts as I built them rather than sketching the dashboard first. Planning the layout before creating visuals would make the final product cleaner and faster to assemble.
 
 Documenting these here so I can hold myself to them — and so the progression is visible across my next projects.
