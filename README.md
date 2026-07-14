@@ -2,9 +2,9 @@
 
 An interactive Excel dashboard that analyzes what drives bike purchases — examining income, gender, age, commute distance, and other demographics — built end to end, from raw data cleaning through modeling to an interactive, slicer-driven dashboard.
 
-![Bike Sales Dashboard](images/dashboard.png)
-
-> Replace the image path above with a screenshot of your dashboard saved as `images/dashboard.png`. The screenshot is the single most important element of the README — most viewers will look at the image and never open the workbook.
+<p align="center">
+  <img src="images/bike_project_dashboard.png" alt="Bike Sales Dashboard" width="100%">
+</p>
 
 ---
 
@@ -107,38 +107,28 @@ Built PivotTables to summarize the data for each view:
 
 ## Key Insights
 
-- Buyers earn more. In both genders, people who purchased a bike had a higher average income than those who did not, suggesting income is a meaningful purchase driver.
-- Middle-aged customers dominate. Respondents aged 31 to 54 purchased far more bikes than adolescents (under 31) or older customers (55 and over).
-- Short commuters buy more. Purchases are highest among people with the shortest commutes and generally taper off as commute distance grows.
-- Income skews by gender in this sample, with males reporting higher average income than females.
+- **Buyers earn more.** In both genders, people who purchased a bike had a higher average income than those who did not, suggesting income is a meaningful purchase driver.
+- **Middle-aged customers dominate.** Respondents aged 31 to 54 purchased far more bikes than adolescents (under 31) or older customers (55 and over).
+- **Short commuters buy more.** Purchases are highest among people with the shortest commutes and generally taper off as commute distance grows.
+- **Income skews by gender** in this sample, with males reporting higher average income than females.
 
 ---
 
-## Recommendations
+## Business Recommendations
 
 - Prioritize the middle-aged, higher-income segment in paid marketing, where purchase intent concentrates.
-- Target short-commute and urban customers, who over-index on buying, with commuter-focused messaging and product bundles.
+- Target short-commute and urban customers, who over-index on buying, with commuter-focused messaging.
 - Test premium positioning, since buyers consistently earn more than non-buyers, indicating potential room to move up-market.
 
 ---
 
-## How to Explore
+## Reflections and Next Steps
 
-1. Download `Bike_Sales_Dashboard.xlsx`.
-2. Open the Dashboard sheet.
-3. Use the Marital Status, Region, and Education slicers to filter the data. All three charts update together.
+This was one of my first end-to-end Excel dashboards, and building it start to finish surfaced a few things I want to carry into future projects:
 
----
+- **Match the chart type to the data.** I used a line chart for commute distance, but those bands are categorical, not continuous — a clustered column chart would communicate the comparison more honestly. Next time I'll be more deliberate about chart-type selection up front.
+- **Lead with headline numbers.** The dashboard would read more like a real business tool with KPI cards (total respondents, overall purchase rate, average income of buyers) at the top. I plan to include summary metrics by default going forward.
+- **Go deeper on the data.** I focused on income, age, and commute distance, but occupation, home ownership, and number of children likely hold additional signal. In future work I want to explore more variables before settling on a final set of visuals.
+- **Think about layout earlier.** I arranged charts as I built them rather than sketching the dashboard first. Planning the layout before creating visuals would make the final product cleaner and faster to assemble.
 
-## Possible Improvements
-
-- Convert the commute-distance line chart to a clustered column chart, since distance bands are categorical and columns communicate the comparison more cleanly than a trend line.
-- Add KPI cards (total respondents, overall purchase rate, average income of buyers) for at-a-glance headline numbers.
-- Extend the analysis to occupation, home ownership, and number of children to identify additional purchase drivers.
-
----
-
-## Contact
-
-**[Your Name]**
-[LinkedIn](#) · [Portfolio](#) · [Email](#)
+Documenting these here so I can hold myself to them — and so the progression is visible across my next projects.
