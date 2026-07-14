@@ -78,7 +78,7 @@ Worked on a copy of the raw data, keeping the original untouched on a separate s
 Created an Age Brackets column using a nested `IF` formula to group individual ages into three readable segments:
 
 ```excel
-=IF(Age<31,"Adolescent",IF(Age<55,"Middle Age","Old"))
+=IF(L2>54,"Old",IF(L2>=31,"Middle Age",IF(L2<31,"Adolescent","Invalid")))
 ```
 
 Bucketing continuous age into brackets makes the age analysis far easier to read than plotting dozens of individual ages.
