@@ -90,19 +90,19 @@ Built PivotTables to summarize the full 1,000-respondent dataset for each view. 
 **Average income by gender, split by purchase decision**
 
 <p align="center">
-  <img src="images/pivots/pivot_income_by_gender.png" alt="Average income by gender and purchase" width="55%">
+  <img src="images/pivots/pivot_income_by_gender.png" alt="Average income by gender and purchase" width="65%">
 </p>
 
 **Count of purchases by commute distance**
 
 <p align="center">
-  <img src="images/pivots/pivot_by_commute.png" alt="Bike purchases by commute distance" width="55%">
+  <img src="images/pivots/pivot_by_commute.png" alt="Bike purchases by commute distance" width="65%">
 </p>
 
 **Count of purchases by age bracket**
 
 <p align="center">
-  <img src="images/pivots/pivot_by_age.png" alt="Bike purchases by age bracket" width="55%">
+  <img src="images/pivots/pivot_by_age.png" alt="Bike purchases by age bracket" width="65%">
 </p>
 
 ### 4. Visualization (PivotCharts)
